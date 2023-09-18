@@ -1,12 +1,18 @@
-import '../../model/username_model.dart';
+
 
 class Images{
-  static String netflix_logo="assets/svg/Vector.svg";
-  static String netflix_logo_Icon="assets/svg/logos_netflix-icon.svg";
+  //netflix logo
+  static String netflix_logo_text="assets/svg/logoText.svg";
+  static String netflix_logo_Icon="assets/svg/logoIcon.svg";
+
+  static String bgImage="assets/images/homeBg.png";
+  static String playIcon="assets/icons/playIcon.svg";
+
+//social media icons
+  static String whatsAppLogo="assets/icons/w.png";
+  static String facebookLogo="assets/icons/f.png";
+  static String emailLogo="assets/icons/e.png";
+
+  static String check="assets/icons/check.png";
+
 }
-List<UsernameModel> userNameList=[
-  UsernameModel(name: "Emenalo", image: "assets/images/Rectangle2.png"),
-  UsernameModel(name: "Onyeka", image: "assets/images/Rectangle3.png"),
-  UsernameModel(name: "Thelma", image: "assets/images/Rectangle4.png"),
-  UsernameModel(name: "Kids", image: "assets/images/Rectangle5.png"),
-];
