@@ -1,16 +1,32 @@
 import 'package:flutter/material.dart';
-
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import '../main.dart';
 import '../utils/color_constants/color_constant.dart';
 
 
+
+
 class CommingSoonMovies extends StatelessWidget {
-  const CommingSoonMovies({
-    super.key,
+   CommingSoonMovies({
+    super.key, required this.index,
   });
+   final int index;
+
+   List<String> videoLinks=[
+     "RLzC55ai0eo",
+     "VzT2xurZrbI",
+     "ySYHcfvrmyw",
+     "7xQCCw5sbdY",
+     "ATElufr0OiE",
+   ];
+
 
   @override
   Widget build(BuildContext context) {
+    YoutubePlayerController _controller = YoutubePlayerController(
+      initialVideoId: videoLinks[index],
+    );
+
     return Container(
       margin: EdgeInsets.only(top: 20),
       width: double.infinity,
@@ -21,22 +37,41 @@ class CommingSoonMovies extends StatelessWidget {
           Container(
             width: double.infinity,
             height: 195,
-            color: Colors.yellowAccent,
+            child: YoutubePlayer(
+              controller: _controller,
+              showVideoProgressIndicator: true,
+            ),
           ),
+
           SizedBox(height: 20,),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Column(
                 children: [
-                  Icon(Icons.notifications, color: isDark?light:dark,),
-                  Text("Remind Me", style: TextStyle(color: isDark?light:dark, fontSize: 11),)
+                  IconButton(onPressed: (){
+                    print("you clicked remainder");
+                    }, icon: Icon(Icons.notifications,color: isDark?light:dark)),
+                  Text("Remainder", style: TextStyle(color: isDark?light:dark, fontSize: 11),)
                 ],
               ),
-              SizedBox(width: 20,),
               Column(
                 children: [
-                  Icon(Icons.share, color: isDark?light:dark,),
+                  IconButton(onPressed: ()async{
+                      // await FlutterShare.share(
+                      //     title: 'Example share',
+                      //     text: 'Example share text',
+                      //     linkUrl: 'https://flutter.dev/',
+                      //     chooserTitle: 'Example Chooser Title'
+                      // );
+                     // Share.share('check out my website https://example.com');
+                    // String text = 'Check out this awesome link:';
+                    // String url = 'https://example.com';
+
+                    // Share.share('$text $url');
+                    print("you clicked share");
+
+                  }, icon: Icon(Icons.share,color: isDark?light:dark)),
                   Text("Share", style: TextStyle(color: isDark?light:dark, fontSize: 11),)
                 ],
               ),

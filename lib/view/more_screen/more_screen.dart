@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -198,7 +197,7 @@ class MoreScreen extends StatelessWidget {
                         thickness: 1,
                       ),
                       SocialMediaContainer(
-                          image: Images.emailLogo, color:isDark? light:dark),
+                          image: Images.emailLogo, color:isDark? light:light),
                       VerticalDivider(
                         color:isDark? Colors.white.withOpacity(.6):dark,
                         thickness: 1,
@@ -207,7 +206,7 @@ class MoreScreen extends StatelessWidget {
                         children: [
                           Icon(
                             Icons.more_horiz,
-                            color: Colors.white,
+                            color: isDark?light:dark,
                           ),
                           Text(
                             "More",

@@ -8,6 +8,8 @@ import '../../widget/notification_container.dart';
 class CommingSoon extends StatelessWidget {
   const CommingSoon({super.key});
 
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,14 +39,19 @@ class CommingSoon extends StatelessWidget {
             height: 130,
             child: ListView.builder(
               physics: NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
                 itemCount: 2,
                 itemBuilder: (context, index){
               return   Notificationcontainer();
             }),
           ),
-          CommingSoonMovies(),
-          CommingSoonMovies(),
-          CommingSoonMovies(),
+          ListView.builder(
+            physics: NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
+              itemCount: 5,
+              itemBuilder: (context, index){
+            return CommingSoonMovies(index: index,);
+          })
 
 
         ],
