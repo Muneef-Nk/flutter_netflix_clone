@@ -1,16 +1,9 @@
-# netflix_clone
+# Netflix ui clone
+<img src="https://github.com/Muneef-Nk/flutter_netflix_clone/assets/92105703/541617dd-c2ff-4702-bdc6-96444a3bccf5" width="200" height="400"/>
+<img src="https://github.com/Muneef-Nk/flutter_netflix_clone/assets/92105703/a4826650-49b0-4622-811a-73978e1df5b3" width="200" height="400"/>
+<img src="https://github.com/Muneef-Nk/flutter_netflix_clone/assets/92105703/3f61edfb-cd44-4bff-94f3-eb552bed1aaf" width="200" height="400"/>
+<img src="https://github.com/Muneef-Nk/flutter_netflix_clone/assets/92105703/b2881ef5-c902-4b7d-82e3-8b267a0b9895" width="200" height="400"/>
+<img src="https://github.com/Muneef-Nk/flutter_netflix_clone/assets/92105703/f6821351-c834-4323-93ac-96ef80c96464" width="200" height="400"/>
+<img src="https://github.com/Muneef-Nk/flutter_netflix_clone/assets/92105703/12b9d4ac-708e-43bb-b0d6-3b8643d2cb78" width="200" height="400"/>
 
-A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
